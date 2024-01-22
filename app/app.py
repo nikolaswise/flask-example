@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-  return "use the flas cli"
+  return render_template('root.html')
 
 @app.route('/form', methods=['POST', 'GET'])
 def form():
